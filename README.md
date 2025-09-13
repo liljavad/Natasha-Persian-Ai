@@ -3,7 +3,7 @@
 # Project Natasha 🤖
 ### A Novel Framework for Persian Conversational AI
 
-<img src="https://i.imgur.com/Y5cn0Th.png" alt="Project Natasha Technology Banner" style="width:100%; max-width:800px; border-radius:15px;"/>
+<img src="https://imgur.com/Qbj70Wt.png" alt="Project Natasha Technology Banner" style="width:100%; max-width:800px; border-radius:15px;"/>
 
 <p>
   <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python" alt="Language: Python">
@@ -20,7 +20,7 @@
 ---
 
 <p align="center">
-    <img src="https://i.imgur.com/Y5cn0Th.png" alt="Natasha UI Demo" style="width:100%; max-width:700px; border-radius:15px; border: 1px solid #333;"/>
+    <img src="https://imgur.com/Qbj70Wt.png" alt="Natasha UI Demo" style="width:100%; max-width:700px; border-radius:15px; border: 1px solid #333;"/>
 </p>
 
 ---

@@ -3,7 +3,7 @@
 # Project Natasha 🤖
 ### A Novel Framework for Persian Conversational AI
 
-<img src="https://imgur.com/a/Y5cn0Th" alt="Project Natasha Technology Banner" style="width:100%; max-width:800px; border-radius:15px;"/>
+<img src="https://imgur.com/Qbj70Wt" alt="Project Natasha Technology Banner" style="width:100%; max-width:800px; border-radius:15px;"/>
 
 <p>
   <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python" alt="Language: Python">
@@ -20,7 +20,7 @@
 ---
 
 <p align="center">
-    <img src="https://imgur.com/a/Y5cn0Th" alt="Natasha UI Demo" style="width:100%; max-width:700px; border-radius:15px; border: 1px solid #333;"/>
+    <img src="https://imgur.com/Qbj70Wt" alt="Natasha UI Demo" style="width:100%; max-width:700px; border-radius:15px; border: 1px solid #333;"/>
 </p>
 
 ---
@@ -49,7 +49,7 @@ We employed a **Transfer Learning** strategy using the `t5-small` model as our f
 
 ### 🔬 A Glimpse into the "Concept Engine"
 This is the core logic that translates words into abstract concepts. Instead of seeing individual words, the model learns from the underlying ideas, making it incredibly data-efficient.
-
+<details>
 <summary>Click to see a Python code snippet</summary>
 
 ```python
@@ -71,6 +71,7 @@ word_to_concept = {word: int(cluster_id) for word, cluster_id in zip(words, kmea
 
 print("✅ Conceptual map created successfully!")
 ```
+</details>
 
 ### 🛠️ Technology Stack
 
@@ -97,8 +98,8 @@ Our goal is to release the first interactive **Public Demo** of Project Natasha 
 
 This is a proprietary project, but community feedback and questions are highly valued. The best way to communicate with us is right here on GitHub.
 
--   **Have a question or a new idea?** 👉 [**Start a new Discussion**](https://github.com/liljavad/Natasha-Persian-Ai/discussions)
--   **Found a bug or have a feature request?** 👉 [**Open an Issue**](https://github.com/liljavad/Natasha-Persian-Ai/issues)
+-   **Have a question or a new idea?** 👉 [**Start a new Discussion**](https://github.com/liljavad/Natasha-Persian-Ai.git/discussions)
+-   **Found a bug or have a feature request?** 👉 [**Open an Issue**](https://github.com/liljavad/Natasha-Persian-Ai.git/issues)
 -   **Want to stay updated?** 👉 **Star (⭐)** and **Watch (👁️)** this repository!
 
 We actively monitor these channels and look forward to hearing from the community.
@@ -131,7 +132,7 @@ We actively monitor these channels and look forward to hearing from the communit
 
 ### 🔬 نگاهی به کد «موتور مفهومی»
 این بخش، منطق اصلی ترجمه کلمات به مفاهیم انتزاعی را نشان می‌دهد. مدل به جای دیدن کلمات مجزا، از ایده‌های بنیادین آن‌ها یاد می‌گیرد که این فرآیند را به طرز شگفت‌انگیزی بهینه می‌کند.
-
+<details>
 <summary>برای مشاهده نمونه کد پایتون کلیک کنید</summary>
 
 ```python
@@ -153,6 +154,7 @@ word_to_concept = {word: int(cluster_id) for word, cluster_id in zip(words, kmea
 
 print("✅ نقشه مفهومی با موفقیت ایجاد شد!")
 ```
+</details>
 
 ### 🛠️ پشته فناوری (Technology Stack)
 
@@ -179,7 +181,7 @@ print("✅ نقشه مفهومی با موفقیت ایجاد شد!")
 
 این یک پروژه انحصاری است، اما ما برای بازخورد و سوالات جامعه کاربری ارزش زیادی قائل هستیم. بهترین راه برای ارتباط با ما، همین‌جا در گیت‌هاب است.
 
--   **سوال یا ایده جدیدی دارید؟** 👈 [**یک گفتگوی جدید در بخش Discussions آغاز کنید**](https://github.com/liljavad/Natasha-Persian-Ai/discussions)
+-   **سوال یا ایده جدیدی دارید؟** 👈 [**یک گفتگوی جدید در بخش Discussions آغاز کنید**](https://github.com/liljavad/Natasha-Persian-Ai.git/discussions)
 -   **باگ پیدا کردید یا درخواست قابلیتی دارید؟** 👈 [**یک ایشو (Issue) جدید باز کنید**](https://github.com/liljavad/Natasha-Persian-Ai/issues)
 -   **می‌خواهید از آخرین اخبار مطلع شوید؟** 👈 این ریپازیتوری را **استار (⭐)** و **واچ (👁️)** کنید!
 

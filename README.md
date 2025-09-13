@@ -3,7 +3,7 @@
 # Project Natasha 🤖
 ### A Novel Framework for Persian Conversational AI
 
-<img src="https://i.imgur.com/YOUR_BANNER_URL.png" alt="Project Natasha Technology Banner" style="width:100%; max-width:800px; border-radius:15px;"/>
+<img src="https://imgur.com/a/Y5cn0Th" alt="Project Natasha Technology Banner" style="width:100%; max-width:800px; border-radius:15px;"/>
 
 <p>
   <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python" alt="Language: Python">
@@ -47,6 +47,31 @@ This transformation results in a dataset where the model learns relationships be
 #### ⚙️ Model Architecture and Fine-Tuning
 We employed a **Transfer Learning** strategy using the `t5-small` model as our foundation. This powerful and efficient Text-to-Text Transformer was then fine-tuned on the conceptually transformed Persian conversational dataset.
 
+### 🔬 A Glimpse into the "Concept Engine"
+This is the core logic that translates words into abstract concepts. Instead of seeing individual words, the model learns from the underlying ideas, making it incredibly data-efficient.
+
+<summary>Click to see a Python code snippet</summary>
+
+```python
+# Load the unique vocabulary from the preprocessed data
+words = list(vocab_data.keys())
+print(f"Embedding {len(words)} unique tokens...")
+
+# Use a powerful multilingual model to generate semantic vectors
+model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+word_embeddings = model.encode(words, show_progress_bar=True)
+
+print("Clustering vectors into semantic concepts using KMeans...")
+# Group similar word vectors into N distinct concepts
+kmeans = KMeans(n_clusters=NUM_CONCEPTS, random_state=42, n_init=10)
+kmeans.fit(word_embeddings)
+
+# Create the final map from a word to its abstract Concept ID
+word_to_concept = {word: int(cluster_id) for word, cluster_id in zip(words, kmeans.labels_)}
+
+print("✅ Conceptual map created successfully!")
+```
+
 ### 🛠️ Technology Stack
 
 | Category      | Technologies                                                                                  |
@@ -68,9 +93,15 @@ Project Natasha is currently under active development with a focus on research, 
 #### Public Release Outlook (Q1 2026)
 Our goal is to release the first interactive **Public Demo** of Project Natasha in the first quarter of 2026. This demo will allow users to experience the capabilities of our conceptually-driven model firsthand. Further announcements regarding potential API access for research or commercial purposes will follow the demo release.
 
-### 📞 Contact & Inquiries
+### 💬 Community & Communication
 
-This is a proprietary project. For professional inquiries, collaborations, or further information, please connect with me on **[LinkedIn](https://www.linkedin.com/in/your-profile-url/)**.
+This is a proprietary project, but community feedback and questions are highly valued. The best way to communicate with us is right here on GitHub.
+
+-   **Have a question or a new idea?** 👉 [**Start a new Discussion**](https://github.com/liljavad/Natasha-Persian-Ai/discussions)
+-   **Found a bug or have a feature request?** 👉 [**Open an Issue**](https://github.com/liljavad/Natasha-Persian-Ai/issues)
+-   **Want to stay updated?** 👉 **Star (⭐)** and **Watch (👁️)** this repository!
+
+We actively monitor these channels and look forward to hearing from the community.
 
 ---
 ---
@@ -97,6 +128,32 @@ This is a proprietary project. For professional inquiries, collaborations, or fu
 #### ⚙️ معماری و بازآموزی مدل
 ما از استراتژی **یادگیری انتقالی (Transfer Learning)** با استفاده از مدل `t5-small` به عنوان پایه بهره بردیم. این ترنسفورمر قدرتمند سپس بر روی دیتاست مفهومی‌سازی‌شده فارسی، بازآموزی شد.
 
+
+### 🔬 نگاهی به کد «موتور مفهومی»
+این بخش، منطق اصلی ترجمه کلمات به مفاهیم انتزاعی را نشان می‌دهد. مدل به جای دیدن کلمات مجزا، از ایده‌های بنیادین آن‌ها یاد می‌گیرد که این فرآیند را به طرز شگفت‌انگیزی بهینه می‌کند.
+
+<summary>برای مشاهده نمونه کد پایتون کلیک کنید</summary>
+
+```python
+# بارگذاری واژگان یکتا از داده‌های پیش‌پردازش شده
+words = list(vocab_data.keys())
+print(f"در حال ساخت امبدینگ برای {len(words)} توکن یکتا...")
+
+# استفاده از یک مدل قدرتمند چندزبانه برای تولید وکتورهای معنایی
+model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+word_embeddings = model.encode(words, show_progress_bar=True)
+
+print("در حال خوشه‌بندی وکتورها به مفاهیم معنایی با KMeans...")
+# گروه‌بندی وکتورهای کلمات مشابه در N مفهوم مجزا
+kmeans = KMeans(n_clusters=NUM_CONCEPTS, random_state=42, n_init=10)
+kmeans.fit(word_embeddings)
+
+# ساخت نقشه نهایی از هر کلمه به شناسه مفهومی انتزاعی آن
+word_to_concept = {word: int(cluster_id) for word, cluster_id in zip(words, kmeans.labels_)}
+
+print("✅ نقشه مفهومی با موفقیت ایجاد شد!")
+```
+
 ### 🛠️ پشته فناوری (Technology Stack)
 
 | دسته          | فناوری‌ها                                                                                    |
@@ -118,6 +175,12 @@ This is a proprietary project. For professional inquiries, collaborations, or fu
 #### چشم‌انداز انتشار عمومی (سه‌ماهه اول ۲۰۲۶)
 هدف ما انتشار اولین **دموی عمومی** و تعاملی پروژه ناتاشا در سه‌ماهه اول سال ۲۰۲۶ است. این دمو به کاربران اجازه می‌دهد تا قابلیت‌های مدل مفهوم‌محور ما را به صورت زنده تجربه کنند. اطلاعات بیشتر در مورد دسترسی احتمالی به API برای اهداف تحقیقاتی یا تجاری، پس از انتشار دمو اعلام خواهد شد.
 
-### 📞 تماس و اطلاعات بیشتر
+### 💬 ارتباط و جامعه کاربری
 
-این یک پروژه انحصاری (Proprietary) است. برای درخواست‌های همکاری، کسب اطلاعات بیشتر یا ارتباط حرفه‌ای، لطفاً از طریق **[لینکدین](https://www.linkedin.com/in/your-profile-url/)** با من در تماس باشید.
+این یک پروژه انحصاری است، اما ما برای بازخورد و سوالات جامعه کاربری ارزش زیادی قائل هستیم. بهترین راه برای ارتباط با ما، همین‌جا در گیت‌هاب است.
+
+-   **سوال یا ایده جدیدی دارید؟** 👈 [**یک گفتگوی جدید در بخش Discussions آغاز کنید**](https://github.com/liljavad/Natasha-Persian-Ai/discussions)
+-   **باگ پیدا کردید یا درخواست قابلیتی دارید؟** 👈 [**یک ایشو (Issue) جدید باز کنید**](https://github.com/liljavad/Natasha-Persian-Ai/issues)
+-   **می‌خواهید از آخرین اخبار مطلع شوید؟** 👈 این ریپازیتوری را **استار (⭐)** و **واچ (👁️)** کنید!
+
+ما این کانال‌ها را به طور فعال بررسی می‌کنیم و مشتاقانه منتظر شنیدن نظرات شما هستیم.

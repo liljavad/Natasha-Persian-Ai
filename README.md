@@ -95,8 +95,8 @@ Our goal is to release the first interactive **Public Demo** of Project Natasha 
 
 This is a proprietary project, but community feedback and questions are highly valued. The best way to communicate with us is right here on GitHub.
 
--   **Have a question or a new idea?** 👉 [**Start a new Discussion**](https://github.com/liljavad/Natasha-Persian-Ai.git/discussions)
--   **Found a bug or have a feature request?** 👉 [**Open an Issue**](https://github.com/liljavad/Natasha-Persian-Ai.git/issues)
+-   **Have a question or a new idea?** 👉 [**Start a new Discussion**](https://github.com/liljavad/Natasha-Persian-Ai/discussions)
+-   **Found a bug or have a feature request?** 👉 [**Open an Issue**](https://github.com/liljavad/Natasha-Persian-Ai/issues)
 -   **Want to stay updated?** 👉 **Star (⭐)** and **Watch (👁️)** this repository!
 
 We actively monitor these channels and look forward to hearing from the community.
@@ -178,7 +178,7 @@ print("✅ نقشه مفهومی با موفقیت ایجاد شد!")
 
 این یک پروژه انحصاری است، اما ما برای بازخورد و سوالات جامعه کاربری ارزش زیادی قائل هستیم. بهترین راه برای ارتباط با ما، همین‌جا در گیت‌هاب است.
 
--   **سوال یا ایده جدیدی دارید؟** 👈 [**یک گفتگوی جدید در بخش Discussions آغاز کنید**](https://github.com/liljavad/Natasha-Persian-Ai.git/discussions)
+-   **سوال یا ایده جدیدی دارید؟** 👈 [**یک گفتگوی جدید در بخش Discussions آغاز کنید**](https://github.com/liljavad/Natasha-Persian-Ai/discussions)
 -   **باگ پیدا کردید یا درخواست قابلیتی دارید؟** 👈 [**یک ایشو (Issue) جدید باز کنید**](https://github.com/liljavad/Natasha-Persian-Ai/issues)
 -   **می‌خواهید از آخرین اخبار مطلع شوید؟** 👈 این ریپازیتوری را **استار (⭐)** و **واچ (👁️)** کنید!
 

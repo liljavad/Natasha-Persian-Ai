@@ -2,9 +2,6 @@
 
 # Project Natasha 🤖
 ### A Novel Framework for Persian Conversational AI
-
-<img src="https://imgur.com/Qbj70Wt.png" alt="Project Natasha Technology Banner" style="width:100%; max-width:800px; border-radius:15px;"/>
-
 <p>
   <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python" alt="Language: Python">
   <img src="https://img.shields.io/badge/Library-Hugging_Face-FFD000?style=for-the-badge&logo=huggingface" alt="Library: Hugging Face">

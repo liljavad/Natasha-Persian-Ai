@@ -20,7 +20,7 @@
 ---
 
 <p align="center">
-    <img src="https://i.imgur.com/YOUR_DEMO_GIF.gif" alt="Natasha UI Demo" style="width:100%; max-width:700px; border-radius:15px; border: 1px solid #333;"/>
+    <img src="https://imgur.com/a/Y5cn0Th" alt="Natasha UI Demo" style="width:100%; max-width:700px; border-radius:15px; border: 1px solid #333;"/>
 </p>
 
 ---
